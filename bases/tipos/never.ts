@@ -1,9 +1,9 @@
 (() => {
 
-  const error = ( message: string ):never => {
-    throw new Error(message)
-  }
+  // const error = ( message: string ):never => {
+  //   throw new Error(message)
+  // }
 
-  error('Help!')
+  // error('Help!')
 
 })()
