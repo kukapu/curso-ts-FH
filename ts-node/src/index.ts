@@ -1,6 +1,14 @@
-import { getPokemon } from './generics/getpokemon';
+import { Pokemon } from "./decorators/pokemon-class";
 
-getPokemon(4)
-  .then( pokemon => console.log( pokemon.sprites.front_default ) )
-  .catch( err => console.log(err) )
-  .finally( () => console.log('Finally') ) 
+
+
+const charmander = new Pokemon('Charmander');
+
+
+// (Pokemon.prototype as any).customName = 'Pikachu'
+
+
+// charmander.savePokemonToDB(2)
+
+charmander.publicApi = 'https://onizuka.com'
+console.log(charmander)
